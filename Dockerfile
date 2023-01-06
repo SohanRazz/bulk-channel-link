@@ -6,7 +6,7 @@ COPY requirements.txt /requirements.txt
 
 RUN cd /
 RUN pip3 install -U pip && pip3 install -U -r requirements.txt
-RUN mkdir /Channel-Mdisk-Converter
-WORKDIR /Channel-Mdisk-Converter 
+RUN mkdir /bulk-channel-link
+WORKDIR /bulk-channel-link
 COPY start.sh /start.sh
 CMD ["/bin/bash", "/start.sh"]
