@@ -9,14 +9,14 @@ def is_enabled(value, default):
         return default
 
 # Mandatory variables for the bot to start
-API_ID = int(os.environ.get("API_ID", "12124605"))
-API_HASH = os.environ.get("API_HASH", "5cf3577d85fd02286535ec2296934287")
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "5574279873:AAEaA86ZZwkZtptM7UZhNsc-QhY5tWHh6EE")
+API_ID = int(os.environ.get("API_ID", "26813710"))
+API_HASH = os.environ.get("API_HASH", "56ded95eda29b601363e3093a54ba42b")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "5908518756:AAGyOhy3ybSpVuiArjQ4vo5kFSWPe8JHlcs")
 DROPLINK_API = os.environ.get("DROPLINK_API")
-MDISK_API = os.environ.get("MDISK_API", "Qu7jX9V0Sn3q1JHdxjPp")
-ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split(",")) if os.environ.get("ADMINS") else []
+MDISK_API = os.environ.get("MDISK_API", "wNgmxb01dqSvTLyeisuv")
+ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split("5868100284")) if os.environ.get("ADMINS") else []
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertorBotpro")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://postbot:postbot@cluster0.ouwne8q.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Sohanrazz:Sohanrazzcluster0.bjr2jrh.mongodb.net/?retryWrites=true&w=majority")
 WEBSITE = os.environ.get('WEBSITE')
 
 #  Optionnal variables
@@ -25,8 +25,8 @@ EXCLUDE_DOMAIN = list(i.strip() for i in os.environ.get("EXCLUDE_DOMAIN").split(
 CHANNELS = is_enabled((os.environ.get('CHANNELS', "True")), True)
 CHANNEL_ID = list(int(i.strip()) for i in os.environ.get("CHANNEL_ID").split("-1001806065563")) if os.environ.get("CHANNEL_ID") else []
 FORWARD_MESSAGE = is_enabled((os.environ.get('FORWARD_MESSAGE', "True")), True)
-SOURCE_CODE = os.environ.get("SOURCE_CODE", "https://github.com/CyniteOfficial/Channel-Mdisk-Converter")
-USERNAME = os.environ.get("USERNAME", "CyniteBackup")
+SOURCE_CODE = os.environ.get("SOURCE_CODE", "https://github.com/SohanRazz/bulk-channel-link")
+USERNAME = os.environ.get("USERNAME", "Sohan_rajpurohit_7413")
 HEADER_TEXT = os.environ.get("HEADER_TEXT", '')
 FOOTER_TEXT = os.environ.get("FOOTER_TEXT", '')
 BANNER_IMAGE = os.environ.get("BANNER_IMAGE", '')
