@@ -247,7 +247,7 @@ async def extract_link(string):
     urls = re.findall(regex, string)
     return ["".join(x) for x in urls]
 
-# Incase droplink server fails, bot will return https://droplink.co/st?api={DROPLINK_API}&url={link} 
+# Incase droplink server fails, bot will return https://oggylink.com/st?api={DROPLINK_API}&url={link} 
 
 # TinyUrl 
 async def tiny_url_main(url):
@@ -256,7 +256,7 @@ async def tiny_url_main(url):
 
 # todo -> bypass long droplink url
 async def droplink_bypass_handler(text):
-    links = re.findall(r'https?://droplink.co[^\s"*<>]+', text)	
+    links = re.findall(r'https?://Oggylink.com[^\s"*<>]+', text)	
     for link in links:
         bypassed_link = await droplink_bypass(link)
         text = text.replace(link, bypassed_link)
@@ -311,7 +311,7 @@ async def droplink_bypass(url):
 
 async def is_droplink_url(url):
     domain = urlparse(url).netloc
-    domain = url if "droplink.co" in domain else False
+    domain = url if "Oggylink.com" in domain else False
     return domain
 
 
