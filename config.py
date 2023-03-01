@@ -12,12 +12,12 @@ def is_enabled(value, default):
 API_ID = int(os.environ.get("API_ID", "20171745"))
 API_HASH = os.environ.get("API_HASH", "0c02173d06c7f4916e0181e2c989a363")
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "5600148348:AAFscHiLLFsGmnE1VOOXTa9Jfoh3UH6bVCA")
-DROPLINK_API = os.environ.get("DROPLINK_API")
+DROPLINK_API = os.environ.get("DROPLINK_API","37ca781d294530c4198510ed8ac0d6fef8109ccb")
 MDISK_API = os.environ.get("MDISK_API", "neRblmUPT2bDq65y6iDb")
 ADMINS = list(int(i.strip()) for i in os.environ.get("ADMINS").split(",")) if os.environ.get("ADMINS") else []
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "MdiskConvertorBotpro")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://Sohanrazz:Sohanrazz@cluster0.3ru2c4f.mongodb.net/?retryWrites=true&w=majority")
-WEBSITE = os.environ.get('WEBSITE')
+WEBSITE = os.environ.get('WEBSITE', "Oggylink.com")
 
 #  Optionnal variables
 INCLUDE_DOMAIN = list(i.strip() for i in os.environ.get("INCLUDE_DOMAIN").split(",")) if os.environ.get("INCLUDE_DOMAIN") else []
